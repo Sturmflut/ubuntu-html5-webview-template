@@ -1,0 +1,40 @@
+import QmlProject 1.1
+
+Project {
+    mainFile: "app.qml"
+
+    /* Include .qml, .js, and image files from current directory and subdirectories */
+    QmlFiles {
+        directory: "."
+    }
+    JavaScriptFiles {
+        directory: "."
+    }
+    ImageFiles {
+        directory: "."
+    }
+    Files {
+        filter: "*.desktop"
+    }
+    Files {
+        filter: "*.apparmor"
+    }
+    Files {
+        filter: "README*"
+    }
+    Files {
+        directory: "."
+        paths: ["manifest.json",".excludes"]
+    }
+    Files {
+        directory: "www"
+        filter: "*"
+    }
+    Files {
+        directory: "debian"
+        filter: "*"
+    }
+    /* List of plugin directories passed to QML runtime */
+    importPaths: [ "." ,"/usr/bin","/usr/lib/x86_64-linux-gnu/qt5/qml" ]
+}
+

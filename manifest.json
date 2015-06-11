@@ -1,0 +1,15 @@
+{
+    "name": "html5-app.yourname",
+    "description": "A HTML5 app",
+    "architecture": "all",
+    "title": "HTML5 app",
+    "hooks": {
+        "pandalove-qml": {
+            "apparmor": "app.apparmor",
+            "desktop": "app.desktop"
+        }
+    },
+    "version": "0.1",
+    "maintainer": "Joey Example <joey@example.com>",
+    "framework": "ubuntu-sdk-14.10-qml"
+}

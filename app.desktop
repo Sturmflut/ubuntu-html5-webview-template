@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=HTML5 app
+Exec=qmlscene app.qml
+Icon=app.png
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
+X-Ubuntu-Default-Department-ID=games
+X-Ubuntu-Splash-Title=HTML5 app
