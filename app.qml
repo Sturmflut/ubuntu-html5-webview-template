@@ -1,16 +1,24 @@
 import QtQuick 2.0
-import Ubuntu.Web 0.2
+import com.canonical.Oxide 1.0
 import Ubuntu.Components 1.0
 import QtQuick.Window 2.1
 
 Window {
     id: window
-    //visibility: Window.FullScreen
+    visibility: Window.FullScreen
 
     WebView {
-        //rotation: 90
+        id: view
 
+        // Disable for 90° rotation
         anchors.fill: parent
+
+        // Enable for 90° rotation
+        //rotation: 90
+        //width: parent.height
+        //height: parent.width
+
+        anchors.centerIn: parent
 
         url: Qt.resolvedUrl("www/index.html")
 
@@ -18,20 +26,5 @@ Window {
         preferences.allowFileAccessFromFileUrls: true
         preferences.localStorageEnabled: true
         preferences.appCacheEnabled: true
-
-        context: WebContext {
-            sessionCookieMode: {
-                if (typeof webContextSessionCookieMode !== 'undefined') {
-                    if (webContextSessionCookieMode === "persistent") {
-                        return WebContext.SessionCookieModePersistent
-                    } else if (webContextSessionCookieMode === "restored") {
-                        return WebContext.SessionCookieModeRestored
-                    }
-                }
-                return WebContext.SessionCookieModeEphemeral
-            }
-
-            dataPath: "/home/phablet/.config/html5-app.yourname"
-        }
     }
 }
