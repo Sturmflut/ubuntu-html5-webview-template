@@ -4,7 +4,7 @@
     "architecture": "all",
     "title": "HTML5 app",
     "hooks": {
-        "pandalove-qml": {
+        "app": {
             "apparmor": "app.apparmor",
             "desktop": "app.desktop"
         }
