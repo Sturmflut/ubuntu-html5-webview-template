@@ -42,7 +42,7 @@ Window {
                     return WebContext.SessionCookieModeEphemeral
                 }
 
-                dataPath: "/home/phablet/.config/pandalove-qml.sturmflut"
+                dataPath: "/home/phablet/.config/html5-app.yourname"
             }
 
             //transform: Scale {

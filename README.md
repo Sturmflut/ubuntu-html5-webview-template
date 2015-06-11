@@ -3,7 +3,7 @@ Template for making a click package out of any html5 app, using a QML WebView wr
 
 Put your HTML5 app in www/
 
-Modify the app.desktop and manifest.json to set your app name, version, etc.
+Modify the app.desktop, app.qml and manifest.json to set your app name, version, etc. If you need local storage, pay attenttion to the "path" property in app.qml!
 
 Options for building:
 
