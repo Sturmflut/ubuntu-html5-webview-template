@@ -22,8 +22,6 @@ Window {
 
         url: Qt.resolvedUrl("www/index.html")
 
-        preferences.allowUniversalAccessFromFileUrls: true
-        preferences.allowFileAccessFromFileUrls: true
         preferences.localStorageEnabled: true
         preferences.appCacheEnabled: true
     }
